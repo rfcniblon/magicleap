@@ -215,13 +215,25 @@ h1{
 
 /* fin code Virginie*/
 
+.images_alignement{
+  display: row;
+  justify-content:row;
+   align-items: center;
+}
+
+.color_red{
+  color: red;
+}
+/* font size en taille 58% */
+.titre_gros{
+  font-size: 58px;
+}
 .photo_dessus{
     background-image: url("./img/");
     background: no-repeat;
     width: 400px;
     height: 400px;
 }
-
 /* bouton rouge avec border radius */
 .foot_button{
     color: white;
@@ -303,6 +315,7 @@ div.footer_center{
    display: flex;
    flex-direction: row;    
 }
+                     /*      a regrouper */
 div.foot1{
     display: flex;
     flex-direction: column;
