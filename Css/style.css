@@ -106,32 +106,55 @@ img.logo_partner{
    margin: 0;
    position: fixed;
    top: 0;
-   border: 1px solid black;
+   border: 1px solid lightgrey;
+   height: 10%;
 }
 .logo{
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  
+  padding: 0 8px 0 24px;
 }
-.titre{
-   margin: 5px 20px;
-   justify-content: flex-start;
-   border: 1px solid black;
+
+.logo-header-nav{
+   object-fit: contain;
+
 }
+
 nav ul{
    display: flex;
    flex-direction: row;
+   align-items: center;
    background-color: white;
    list-style-type: none;
-   width: 100%;
+
    margin: 0;
-   border: 1px solid black;
+   white-space: nowrap;
+   height: 100%;
+   
 }
+
 li{
-   margin: 1rem 2rem;
-   border: 1px solid black;
+   margin: 1rem 0.5rem;
+   padding: 10px;
+   font-size: 0.95rem;
+   color: rgba(0, 0, 0, 0.8)
 }
+
+.button-nav{
+  justify-content: center;
+  align-items: center;
+  object-fit: none;
+  color: white;
+  background-color:red;
+  border-radius: 30px;
+  height: 2rem;
+  width: 100px;
+  border: 0;
+  padding: 5px;
+  margin: 7px;
+}
+
 #baniere-video{
   position: relative;
   right: 0; bottom: 0;
@@ -141,6 +164,7 @@ li{
   object-fit: cover;
   border: 1px solid black;
 }
+
 .baniere{
   position: absolute;
   top:0;
@@ -162,6 +186,7 @@ video{
   z-index: 0;
   border: 1px solid black;
 }
+
 .next-era{
    display: flex;
    flex-flow: row wrap;
@@ -201,7 +226,7 @@ h1{
    background-color: red;
    border-radius: 30px;
    height: 35px;
-   width: 150px;
+   width: 10rem;
    border: 0;
    padding: 5px;
    margin: 7px;
