@@ -102,11 +102,17 @@ img.logo_partner{
    width: 100%;
    display: flex;
    background-color: white;
-   
+   justify-content: flex-end;
    margin: 0;
    position: fixed;
    top: 0;
    border: 1px solid black;
+}
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  
 }
 .titre{
    margin: 5px 20px;
@@ -116,10 +122,6 @@ img.logo_partner{
 nav ul{
    display: flex;
    flex-direction: row;
-   justify-content: flex-end;
-   justify-items: flex-end;
-   align-items: flex-end;
-   align-items: end;
    background-color: white;
    list-style-type: none;
    width: 100%;
@@ -152,7 +154,7 @@ li{
   border: 3px solid black;
   margin: auto;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 video{
@@ -180,15 +182,17 @@ h1{
     color: white;
     border: 1px solid black;
     font-weight: 900;
+    font-size: 20%;
 }
 .subheading-video{
+   display: flex;
+   flex-wrap: wrap;
    text-align: center;
    font-size: 20px;
    z-index: 1;
    color: white;
    border: 1px solid black;
-   width: 640px;
-   height: 50px;
+   width: 75%;
 }
 .button{
    justify-content: center;
