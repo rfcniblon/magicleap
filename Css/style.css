@@ -574,6 +574,7 @@ button.sec_5-b{
 /* font size en taille 58% */
 .titre_gros{
   font-size: 58px;
+  text-align: left;
 }
 .photo_dessus{
     background-image: url("./img/");
