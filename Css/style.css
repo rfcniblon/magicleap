@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   box-sizing: border-box; 
 }
 /* Baptiste */
 body{
@@ -406,7 +406,7 @@ li{
   border: 0;
   padding: 5px;
   margin: 7px;
-}
+} 
 
 #baniere-video{
   position: relative;
@@ -496,20 +496,77 @@ h1{
 }
 /* fin code Virginie*/
 
+/* Centrer les 4 images de la section */
+
+
+.images {
+  text-align:center;
+}
+
+.testeur{
+  /* background-color: silver;
+  width: calc(33.33% - 30px);
+  height: 400px;
+  margin: 8px ; */
+  display: flex;
+
+  
+}
+/* SECTION 5 --------------------------*/
+
+
+.sec_5-b{
+  position: absolute;
+  text-align: center;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button.sec_5-b{
+  color: rgb(75, 75, 75);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  height: 35px;
+  width: 90px;
+  border: 0;
+}
+.sec_5{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: 'lomino-regular',sans-serif;
+  z-index: -1;
+  overflow: hidden;
+}
+.sec_5-h2{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  letter-spacing: 3px;
+  font-size: 45px;
+  font-family: 'lomino-regular',sans-serif;
+ 
+}
+ .sec_5-h3{
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  letter-spacing: 3.5px;
+  font-family: 'lomino-regular',sans-serif;
+
+} 
 /* Centrage des deux photos */
 .image2photo{
   width: 30%;
   height: 500px;
-
 }
 
-
-/* Centrer les 4 images de la section */
-.center_image1{
-  display: flex;
-  align-items: center;
-  align-self: auto
-}
 /* class couleur rouge pour du texte*/
 .color_red{
   color: red;
@@ -523,16 +580,6 @@ h1{
     background: no-repeat;
     width: 400px;
     height: 400px;
-}
-/* bouton bleu a changer en white ou opacity */
-.button_footer{
-  color: black;
-  background-color: blue;
-  border-radius: 30px;
-  height: 35px;
-  width: 100px;
-  border: 10px;
-  
 }
 /* bouton rouge avec border radius */
 .foot_button{
@@ -591,6 +638,7 @@ div.footer_bandeau2{
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-bottom:  10px;
 }
 /* opcatity logo reseau sociaux a finir !! */
 .foot_logo:hover{
@@ -607,9 +655,12 @@ h2{
 }
 /* lien footer*/
 div.footer_center{
-   background-color: rgb(114, 114, 170);
+   background-color: white;
    display: flex;
    flex-direction: row;    
+   align-content: space-around;
+   /* margin-left: 10px; */
+  padding-left: 15%;
 }
                      /*      a regrouper */
 div.foot1{
@@ -644,9 +695,10 @@ div.foot4{
     border-color:blue;
     padding: 1% 3%;
 } 
-p{
-    text-align: center;
-}
+ #text_formulaire{
+    text-align: left;
+    margin-left: 9%; 
+} 
 div.texte_formulaire{
     display: flex;
     flex-direction: row
