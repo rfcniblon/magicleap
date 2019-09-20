@@ -360,8 +360,9 @@ button.sec_3-b{
    position: fixed;
    top: 0;
    border: 1px solid lightgrey;
-   height: 10%;
+   height: 48px;
 }
+
 .logo{
   width: 100%;
   display: flex;
@@ -380,7 +381,7 @@ nav ul{
    align-items: center;
    background-color: white;
    list-style-type: none;
-
+   
    margin: 0;
    white-space: nowrap;
    height: 100%;
@@ -394,17 +395,17 @@ li{
    color: rgba(0, 0, 0, 0.8)
 }
 
-.button-nav{
+#buy{
   justify-content: center;
   align-items: center;
   object-fit: none;
   color: white;
   background-color:red;
   border-radius: 30px;
-  height: 2rem;
-  width: 100px;
+  height: 20px;
+  width: 10px;
   border: 0;
-  padding: 5px;
+  padding: 10px;
   margin: 7px;
 } 
 
@@ -415,7 +416,6 @@ li{
   width: auto; height: auto; z-index: -100;
   background-size: cover;
   object-fit: cover;
-  border: 1px solid black;
 }
 
 .baniere{
@@ -424,12 +424,12 @@ li{
   left:0;
   z-index: 100;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-self: center;
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
-  margin: auto;
+  margin: 0;
   width: 100%;
   height: 100%;
 }
@@ -437,30 +437,25 @@ li{
 video{
   perspective: 100px;
   z-index: 0;
-  border: 1px solid black;
 }
 
 .next-era{
    display: flex;
    flex-flow: row wrap;
    align-content: center;
-   margin-top: 100px;
    font-size: 3.5rem;
-   text-align: center;
    height: 200px;
    width: 500px;
    line-height: 60px;
    justify-items: center;
-   transform: translateY(10);
-   border: 1px solid black;
 }
 h1{
     justify-items: center;
     z-index: 1;
     color: white;
-    border: 1px solid black;
     font-weight: 900;
     font-size: 20%;
+    margin:0;
 }
 .subheading-video{
    display: flex;
@@ -469,20 +464,49 @@ h1{
    font-size: 20px;
    z-index: 1;
    color: white;
-   border: 1px solid black;
-   width: 75%;
+   width: 600px;
+   color: lightgrey;
+   margin-bottom: 30px;
 }
 .button{
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  align-items: center;
    color: white;
-   background-color: red;
+   background-color:white;
    border-radius: 30px;
-   height: 35px;
-   width: 10rem;
+   height: 3rem;
+   width: 15rem;
    border: 0;
    padding: 5px;
    margin: 7px;
+   color: rgba(0, 0, 0, 0.8);
+   margin-bottom: 20%;
+}
+
+#bouton-video{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder
+}
+
+
+.num{
+  display: flex;
+  justify-content: center;
+  border: 2px solid lightgrey;
+  background-color: transparent;
+  color: white;
+}
+
+#lecture{
+  height: 100%;
+  width: auto;
+  opacity: 0,2;
+  margin-left: 0;
+  margin-right: 20px;
+  font-size: 35px;
+
 }
 .en-ligne{
    display: flex;
@@ -490,10 +514,38 @@ h1{
    z-index: 1;
    text-decoration: none;
 }
+
+
 .scroll_down{
    z-index: 1;
    color: white;
 }
+
+#chevron{
+  height: 40%;
+  width: 5%;
+}
+
+@media screen and (max-width: 1023px){
+  .subheading-video{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .en-ligne{
+    flex-direction: column;
+  }
+  #button-video{
+    margin:4px;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+}
+
+
 /* fin code Virginie*/
 
 /* Centrer les 4 images de la section */
