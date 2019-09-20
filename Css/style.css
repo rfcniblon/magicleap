@@ -381,33 +381,29 @@ nav ul{
    align-items: center;
    background-color: white;
    list-style-type: none;
-   
    margin: 0;
    white-space: nowrap;
    height: 100%;
-   
+    
 }
-
 li{
    margin: 1rem 0.5rem;
    padding: 10px;
    font-size: 0.95rem;
    color: rgba(0, 0, 0, 0.8)
 }
-
-#buy{
+ #buy{
+  display: flex;
   justify-content: center;
-  align-items: center;
-  object-fit: none;
   color: white;
   background-color:red;
+  font-size: 16px;
   border-radius: 30px;
-  height: 20px;
-  width: 10px;
+  height: 2rem;
+  width: 6rem;
   border: 0;
-  padding: 10px;
-  margin: 7px;
-} 
+  padding: 5px;
+}  
 
 #baniere-video{
   position: relative;
@@ -518,15 +514,25 @@ h1{
 }
 
 
-.scroll_down{
-   z-index: 1;
+#scroll_down{ 
+   /* margin-bottom: 20%;  */
+    z-index: 1;  
    color: white;
 }
 
+.chevron-parent {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 #chevron{
-  height: 40%;
+  height: 40%; 
   width: 5%;
+<<<<<<< HEAD
   top:90%;
+=======
+  margin: 2%;
+>>>>>>> 0e8511d487948e8e728d97ac9e9ba786e1dc9503
 }
 
 @media screen and (max-width: 1023px){
@@ -552,7 +558,7 @@ h1{
 
 /* fin code Virginie*/
 
-/* Centrer les 4 images de la section */
+/* Debut Nicolas */
 
 
 .images {
@@ -560,11 +566,12 @@ h1{
 }
 
 .testeur{
-  /* background-color: silver;
-  width: calc(33.33% - 30px);
-  height: 400px;
-  margin: 8px ; */
+  
+  /* width: calc(33.33% - 30px); */
+  
+  margin: 8px ; 
   display: flex;
+  /* border-radius: 30%; */
 
   
 }
@@ -626,16 +633,18 @@ button.sec_5-b{
 /* class couleur rouge pour du texte*/
 .color_red{
   color: red;
+  margin-bottom:65px;
 }
 /* font size en taille 58% */
 .titre_gros{
   font-size: 58px;
+  text-align: left;
 }
 .photo_dessus{
     background-image: url("./img/");
     background: no-repeat;
-    width: 400px;
-    height: 400px;
+    display: flex;
+    justify-content: center;
 }
 /* bouton rouge avec border radius */
 .foot_button{
@@ -688,6 +697,7 @@ a{
 div.footer_bandeau2{
     display: flex;
     flex-direction: flex-start;
+    
 }
 /* centrage des logos reseau sociaux */
 .foot_logo{
