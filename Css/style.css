@@ -344,6 +344,7 @@ button.sec_3-b{
   transform: translate(-50%, -50%);
 }
 }
+
 /* fin code Baptiste*/
 
 
@@ -533,7 +534,6 @@ h1{
 #chevron{
   height: 40%; 
   width: 5%;
-  margin: 2%;
 }
 
 @media screen and (max-width: 1023px){
@@ -834,4 +834,7 @@ div .footer_formulaire{
  justify-content: space-around;
  width: 1272px;
  padding-left: 0;
+}
+.border_img{
+  border-radius: 5%;
 }
