@@ -1,1 +1,69 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Classe contenues dans cette media query ne seront appliquées 
+*  qu'a condition que la largeur de l'ecran ne depasse pas 500px
+**/
+@media screen and (max-width:500px){
+  .mob-0{display: none;}
+  .mob-1{display: 8.33%;}
+  .mob-2{display: 16.66%;}
+  .mob-3{display: 25%;}
+  .mob-4{display: 33.33%;}
+  .mob-5{display: 41.66%;}
+  .mob-6{display: 50%;}
+  .mob-7{display: 58.33%;}
+  .mob-8{display: 66.66%;}
+  .mob-9{display: 75%;}
+  .mob-10{display: 83.33%;}
+  .mob-11{display: 91.66%;}
+  .mob-12{display: 100%;}
+  
+  
+}
+
+
+
+* Classe contenues dans cette media query ne seront appliquées 
+*  qu'a condition que la largeur de l'ecran soit comprise entre 501px et 1023px inclus
+**/
+ @media screen and (min-width:501px) and (max-width:1023px){
+    .tab-0{display: none;}
+    .tab-1{display: 8.33%;}
+    .tab-2{display: 16.66%;}
+    .tab-3{display: 25%;}
+    .tab-4{display: 33.33%;}
+    .tab-5{display: 41.66%;}
+    .tab-6{display: 50%;}
+    .tab-7{display: 58.33%;}
+    .tab-8{display: 66.66%;}
+    .tab-9{display: 75%;}
+    .tab-10{display: 83.33%;}
+    .tab-11{display: 91.66%;}
+    .tab-12{display: 100%;}
+
+}
+/* Classe contenues dans cette media query ne seront appliquées 
+*  qu'a condition que la largeur de l'ecran soitplus grande que 1023px inclus
+**/
+@media screen and (min-width:1023px) {
+  .dsk-0{display: none;}
+  .dsk-1{display: 8.33%;}
+  .dsk-2{display: 16.66%;}
+  .dsk-3{display: 25%;}
+  .dsk-4{display: 33.33%;}
+  .dsk-5{display: 41.66%;}
+  .dsk-6{display: 50%;}
+  .dsk-7{display: 58.33%;}
+  .dsk-8{display: 66.66%;}
+  .dsk-9{display: 75%;}
+  .dsk-10{display: 83.33%;}
+  .dsk-11{display: 91.66%;}
+  .dsk-12{display: 100%;}
+  
+  
+  
+}
