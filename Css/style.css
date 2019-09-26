@@ -386,6 +386,11 @@ nav ul{
    height: 100%;
     
 }
+
+.burger{
+  display: none;
+}
+
 li{
    margin: 1rem 0.5rem;
    padding: 10px;
@@ -528,11 +533,7 @@ h1{
 #chevron{
   height: 40%; 
   width: 5%;
-<<<<<<< HEAD
-  top:90%;
-=======
   margin: 2%;
->>>>>>> 0e8511d487948e8e728d97ac9e9ba786e1dc9503
 }
 
 @media screen and (max-width: 1023px){
@@ -543,15 +544,40 @@ h1{
 }
 
 @media screen and (max-width: 767px){
-  .en-ligne{
-    flex-direction: column;
+
+  nav ul{
+    display: none;
   }
-  #button-video{
-    margin:4px;
+  
+  .burger{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    width: auto;
+    padding-top: 10px;
   }
 
-  h1{
-    font-size: 28px;
+  .en-ligne{
+    flex-direction: column;
+   
+
+  }
+  .button{
+    margin:4px;
+    height: 3rem;
+    width: 10rem; 
+    margin-bottom: 5px;
+  }
+
+  .next-era{
+    font-size: 30px;
+    width: 275px;
+    line-height: 30px;
+    padding-top: 100px;
+  }
+  
+  #baniere-video{
+    padding-top: 55px;
   }
 }
 
