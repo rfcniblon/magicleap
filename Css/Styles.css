@@ -7,20 +7,17 @@
 /*Virginie*/
 
 .barre-de-nav{
-    width: 100%;
-    display: flex;
+
     background-color: white;
-    justify-content: flex-end;
+ 
     margin: 0;
     position: fixed;
     top: 0;
     border: 1px solid lightgrey;
-    height: 48px;
+    height: auto;
  }
  
  .logo{
-   width: 100%;
-   display: flex;
    justify-content: flex-start;
    padding: 0 8px 0 24px;
  }
@@ -30,6 +27,9 @@
  
  }
  
+ .nav{
+     justify-content: flex-end;
+ }
  nav ul{
     display: flex;
     flex-direction: row;
@@ -42,12 +42,9 @@
      
  }
  
- .burger{
-   display: none;
- }
  
  li{
-    margin: 1rem 0.5rem;
+
     padding: 10px;
     font-size: 0.95rem;
     color: rgba(0, 0, 0, 0.8)
@@ -64,7 +61,7 @@
    border: 0;
    padding: 5px;
  }  
- 
+ /*Partie comprenant la video */
  #baniere-video{
    position: relative;
    right: 0; bottom: 0;
@@ -79,14 +76,12 @@
    top:0;
    left:0;
    z-index: 100;
-   display: flex;
    justify-content: space-between;
    flex-direction: column;
    align-self: center;
    justify-content: center;
    align-items: center;
    margin: 0;
-   width: 100%;
    height: 100%;
  }
  
@@ -95,22 +90,15 @@
    z-index: 0;
  }
 
- .video-mobile{
-     display: none;
- }
- 
  .next-era{
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
     font-size: 3.5rem;
     height: 200px;
-    width: 500px;
     line-height: 60px;
-    justify-items: center;
+    
  }
  h1{
-     justify-items: center;
+     align-content: center;
+     justify-content: center;
      z-index: 1;
      color: white;
      font-weight: 900;
@@ -119,13 +107,11 @@
  }
  
  .subheading-video{
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
     font-size: 22px;
     z-index: 1;
     color: white;
-    width: 600px;
     color: lightgrey;
     margin-bottom: 30px;
  }
@@ -171,14 +157,13 @@
  
  }
  .en-ligne{
-    display: flex;
-    flex-direction: row;
     z-index: 1;
     text-decoration: none;
+    justify-content: center
  }
   
  #scroll_down{ 
-     z-index: 1;  
+    z-index: 1;  
     color: white;
  }
  
@@ -226,24 +211,15 @@
   }
   
   .burger{
-    display: flex;
     justify-content: center;
     align-items: flex-end;
     height: 70%;
     width: auto;
-    padding-top: 10px;
-  }
-
-  .video{
-      display: none;
-  }
-
-  .video-mobile{
-      display: block
   }
 
   .en-ligne{
     flex-direction: column;
+    align-items: center
    
   }
   .button{
@@ -255,17 +231,11 @@
 
   .next-era{
     font-size: 30px;
-    width: 275px;
     line-height: 30px;
     padding-top: 100px;
   }
   
-  #baniere-video{
-    padding-top: 55px;
-  }
-
   .subheading-video{
-    width: 500px;
     font-size: 17px;
   }
 
@@ -273,7 +243,7 @@
 /* Classe contenues dans cette media query ne seront appliquées 
 *  qu'a condition que la largeur de l'ecran soit comprise entre 501px et 1023px inclus
 **/
- @media screen and (min-width:501px) and (max-width:1023px){
+ @media screen and (min-width:500px) and (max-width:1023px){
     .tab-0{display: none;}
     .tab-1{width: 8.33%;}
     .tab-2{width: 16.66%;}
@@ -291,9 +261,13 @@
 
     /*Virginie*/
     .subheading-video{
-        width: 500px;
-        font-size: 17px;
+    
+        font-size: 32px;
       }
+    .en-ligne{
+        align-self: center;
+    }
+
 }
 /* Classe contenues dans cette media query ne seront appliquées 
 *  qu'a condition que la largeur de l'ecran soitplus grande que 1023px inclus
