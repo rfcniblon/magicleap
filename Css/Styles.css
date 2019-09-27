@@ -838,6 +838,10 @@ button.sec_3-b{
     width: 50px;
   }
 
+  .menu{
+    position: relative right;
+    float: right;
+  }
   .en-ligne{
     flex-direction: column;
     align-items: center
