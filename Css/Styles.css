@@ -179,6 +179,7 @@
    width: 5%;
  }
  
+ 
 
 /* Classe contenues dans cette media query ne seront appliquées 
 *  qu'a condition que la largeur de l'ecran ne depasse pas 500px
@@ -206,15 +207,12 @@
   /*Virginie*/
 
 
-  nav ul{
-    display: none;
-  }
   
   .burger{
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     height: 70%;
-    width: auto;
+    width: 50px;
   }
 
   .en-ligne{
@@ -260,13 +258,17 @@
 
 
     /*Virginie*/
+    .next-era{
+      font-size: 3rem;
+    }
     .subheading-video{
-    
         font-size: 32px;
       }
     .en-ligne{
         align-self: center;
     }
+    
+
 
 }
 /* Classe contenues dans cette media query ne seront appliquées 

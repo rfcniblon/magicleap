@@ -18,3 +18,16 @@ const twoBtn = document.getElementById("close-modal");
 twoBtn.addEventListener("click", function(event){
   document.getElementById("modal").style.display = 'none';
  })
+
+ //Bouton Menu burger
+ window.onload=function(){
+  let bouton = document.getElementById('burger');
+  let nav = document.getElementById('menu');
+  bouton.addEventListener("click",function(event){
+      if(nav.style.display=="block"){
+          nav.style.display="none";
+      }else{
+          nav.style.display="block";
+      }
+    });
+};
