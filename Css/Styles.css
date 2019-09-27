@@ -1,193 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-
-/*Virginie*/
-
-.barre-de-nav{
-
-    background-color: white;
- 
-    margin: 0;
-    position: fixed;
-    top: 0;
-    border: 1px solid lightgrey;
-    height: auto;
- }
- 
- .logo{
-   justify-content: flex-start;
-   padding: 0 8px 0 24px;
- }
- 
- .logo-header-nav{
-    object-fit: contain;
- 
- }
- 
- .nav{
-     justify-content: flex-end;
- }
- nav ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: white;
-    list-style-type: none;
-    margin: 0;
-    white-space: nowrap;
-    height: 100%;
-     
- }
- 
- 
- li{
-
-    padding: 10px;
-    font-size: 0.95rem;
-    color: rgba(0, 0, 0, 0.8)
- }
-  #buy{
-   display: flex;
-   justify-content: center;
-   color: white;
-   background-color:red;
-   font-size: 16px;
-   border-radius: 30px;
-   height: 2rem;
-   width: 6rem;
-   border: 0;
-   padding: 5px;
- }  
- /*Partie comprenant la video */
- #baniere-video{
-   position: relative;
-   right: 0; bottom: 0;
-   min-width: 100%; min-height: 100%;
-   width: auto; height: auto; z-index: -100;
-   background-size: cover;
-   object-fit: cover;
- }
- 
- .baniere{
-   position: absolute;
-   top:0;
-   left:0;
-   z-index: 100;
-   justify-content: space-between;
-   flex-direction: column;
-   align-self: center;
-   justify-content: center;
-   align-items: center;
-   margin: 0;
-   height: 100%;
- }
- 
- video{
-   perspective: 100px;
-   z-index: 0;
- }
-
- .next-era{
-    font-size: 3.5rem;
-    height: 200px;
-    line-height: 60px;
-    
- }
- h1{
-     align-content: center;
-     justify-content: center;
-     z-index: 1;
-     color: white;
-     font-weight: 900;
-     font-size: 20%;
-     margin:0;
- }
- 
- .subheading-video{
-    flex-direction: column;
-    text-align: center;
-    font-size: 22px;
-    z-index: 1;
-    color: white;
-    color: lightgrey;
-    margin-bottom: 30px;
- }
- 
- .button{
-   display: flex;
-   align-items: center;
-    color: white;
-    background-color:white;
-    border-radius: 30px;
-    height: 3rem;
-    width: 15rem;
-    border: 0;
-    padding: 5px;
-    margin: 7px;
-    color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 20%;
- }
- 
- #bouton-video{
-   font-size: 16px;
-   display: flex;
-   justify-content: center;
-   font-weight: bolder
- }
- 
- 
- .num{
-   display: flex;
-   justify-content: center;
-   border: 2px solid lightgrey;
-   background-color: transparent;
-   color: white;
- }
- 
- #lecture{
-   height: 100%;
-   width: auto;
-   opacity: 0,2;
-   margin-left: 0;
-   margin-right: 20px;
-   font-size: 35px;
- 
- }
- .en-ligne{
-    z-index: 1;
-    text-decoration: none;
-    justify-content: center
- }
-  
- #scroll_down{ 
-    z-index: 1;  
-    color: white;
- }
- 
- #chevron-bas{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-items: space-around
- }
- 
- #chevron{
-   height: 40%; 
-   width: 5%;
- }
- 
-
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 /* Classe contenues dans cette media query ne seront appliquées 
 *  qu'a condition que la largeur de l'ecran ne depasse pas 500px
 **/
-.row{
-    display: flex; 
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 @media screen and (max-width:500px){
   .mob-0{display: none;}
   .mob-1{width: 8.33%;}
@@ -202,44 +25,167 @@
   .mob-10{width: 83.33%;}
   .mob-11{width: 91.66%;}
   .mob-12{width: 100%;}
-
-  /*Virginie*/
-
-
-  nav ul{
-    display: none;
-  }
   
-  .burger{
-    justify-content: center;
-    align-items: flex-end;
-    height: 70%;
-    width: auto;
+#about_magic_selected{
+    display: block;
+ } 
+#creators_selected{
+     display: block;
+}   
+#about_selected{
+    display: block;
+} 
+#buy1_selected{
+    display: block;
+} 
+#custom_support_selected{
+   display: block;
+}
+/* suppression soulignement et couleur lien web  */
+a{
+    text-decoration: none;
+    color:#000;
+}
+  #photo_dessus{
+    background-color: rgb(226, 250, 8);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+ /* bouton rouge avec border radius */
+.foot_button{
+     color: white;
+     background-color: red;
+     border-radius: 30px;
+     height: 35px;
+     width: 100px;
+     border: 0;
+ }
+/* test modal */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
   }
-
-  .en-ligne{
-    flex-direction: column;
-    align-items: center
+  .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  }
+  .modal-inner {
+  margin-top: 30px;
+  }
+  /*  fin du test */
+  .area_of_interest{
+   width: 25%;
+   background-color: white;
+   border-top: hidden;
+   border-left: hidden;
+   border-right: hidden;
+  }
+  .styleinput {
+  width: 25%;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;  
+  }
+  /* class couleur rouge pour du texte*/
+.color_red{
+  color: red;
+  margin-bottom:65px;
+}
+  #formulaire{
+    background-color: blueviolet; 
+        /* width: 100%;
+        display: flex; */
+        flex-direction: column;
+        /* align-items: flex-start;
+        justify-content: flex-start; */
+        padding-left: 0;
+  }
+  /* bouton rouge avec border radius */
+  #footer_1{ 
+    display: flex;
    
   }
-  .button{
-    margin:4px;
-    height: 2rem;
-    width: 10rem; 
-    margin-bottom: 5px;
-  }
-
-  .next-era{
-    font-size: 30px;
-    line-height: 30px;
-    padding-top: 100px;
-  }
-  
-  .subheading-video{
-    font-size: 17px;
-  }
-
+#about_magic{
+     background-color: rgb(59, 235, 82);
+     display: none;
+     
+ } 
+#about{
+     background-color: rgb(240, 128, 23);
+     display: none;
+     
+ } 
+#creators{
+     background-color: rgb(255, 15, 203);
+     display: none;
+     
+ }
+#buy1{
+     background-color: rgb(11, 56, 182);
+     display: none;
+     
+ } 
+#custom_support{
+     background-color:rgb(130, 228, 203);
+     display: none;
+     
+ }
+#reseau_sociaux{
+     background-color: rgb(231, 131, 16);
+     width: 100%;
+     display: flex;
+     text-align: center;
+     padding-left: 0;
+     margin: O;
+ }
+ #footer_haut{
+   background-color: rgb(195, 245, 114);
+   display: flex;
+   flex-direction: row;
+ }
+#footer_haut1{
+     box-sizing: border-box;
+     flex-direction: column;
+     align-content: space-between;
+     background-color: rgb(156, 31, 31);
+     height: 35px;
+ }
+#hr{
+     width: 680%;
+     background-color: crimson;
+     border: 0;
+     height: 8px;
+   }
+   /*Footer  copyright */
+#footer_copyright{
+     box-sizing: border-box; 
+     text-align: center;
+     background-color: rgb(79, 101, 226);
+     height: 35px;
+ }
+ /* background gris claire*/
+.foot-background{
+  background-color: rgb(14, 245, 26);
 }
+
+select.largeur{
+  width: 200px;
+}
+}
+
 /* Classe contenues dans cette media query ne seront appliquées 
 *  qu'a condition que la largeur de l'ecran soit comprise entre 501px et 1023px inclus
 **/
@@ -258,15 +204,162 @@
     .tab-11{width: 91.66%;}
     .tab-12{width: 100%;}
 
-
-    /*Virginie*/
-    .subheading-video{
-    
-        font-size: 32px;
-      }
-    .en-ligne{
-        align-self: center;
+    #about_magic_selected{
+      display: none;
+   } 
+  #creators_selected{
+       display: none;
+  }   
+  #about_selected{
+      display: none;
+  } 
+  #buy1_selected{
+      display: none;
+  } 
+  #custom_support_selected{
+     display: none;
+  }
+  /* suppression soulignement et couleur lien web  */
+  a{
+      text-decoration: none;
+      color:#000;
+  }
+    #photo_dessus{
+      background-color: rgb(226, 250, 8);
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-left: 0;
+  }
+   /* bouton rouge avec border radius */
+  .foot_button{
+       color: white;
+       background-color: red;
+       border-radius: 30px;
+       height: 35px;
+       width: 100px;
+       border: 0;
+   }
+  /* test modal */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
     }
+    .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    }
+    .modal-inner {
+    margin-top: 30px;
+    }row
+    /*  fin du test */
+    .area_of_interest{
+     width: 25%;
+     background-color: white;
+     border-top: hidden;
+     border-left: hidden;
+     border-right: hidden;
+    }
+    .styleinput {
+    width: 25%;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;  
+    }
+    #formulaire{
+          /* background-color: blueviolet; */
+          /* width: 100%;
+          display: flex; */
+          flex-direction: column;
+          /* align-items: flex-start;
+          justify-content: flex-start; */
+          padding-left: 0;
+    }
+    /* bouton rouge avec border radius */
+    #footer_1{
+      background-color: rgb(178, 197, 240); 
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-content: stretch;
+      /* align-items: center; */
+    }
+  #about_magic{
+       background-color: rgb(59, 235, 82);
+       width: 100%;
+       display: flex;
+       align-items: flex-start;
+       justify-content: space-around;
+       padding-left: 0;
+   } 
+  #about{
+       background-color: rgb(240, 128, 23);
+       width: 100%;
+       display: flex;
+       align-items: flex-start;
+       justify-content: space-around;
+       padding-left: 0;
+   } 
+  #creators{
+       background-color: rgb(255, 15, 203);
+       width: 100%;
+       display: flex;
+       align-items: flex-start;
+       justify-content: space-around;
+       padding-left: 0;
+   }
+  #buy1{
+       background-color: rgb(11, 56, 182);
+       width: 100%;
+       display: flex;
+       align-items: flex-start;
+       justify-content: space-around;
+       padding-left: 0;
+   } 
+  #support{
+       background-color:red;
+       width: 100%;
+       flex-direction: column;
+   }
+  #reseau_sociaux{
+       background-color: rgb(16, 20, 231);
+       width: 100%;
+       display: flex;
+       text-align: center;
+       padding-left: 0;
+   }
+   
+  #footer_haut{
+       box-sizing: border-box;
+       flex-direction: column;
+       align-content: space-between;
+       background-color: rgb(156, 31, 31);
+       height: 35px;
+   }
+  #hr{
+       width: 680%;
+       background-color: crimson;
+       border: 0;
+       height: 8px;
+     }
+     /*Footer  copyright */
+  #footer_copyright{
+       /* box-sizing: border-box; */
+       text-align: center;
+       background-color: rgb(112, 156, 31);
+       height: 35px;
+   }
 
 }
 /* Classe contenues dans cette media query ne seront appliquées 
@@ -287,13 +380,10 @@
   .dsk-11{width: 91.66%;}
   .dsk-12{width: 100%;}
   
-                                                     /*Virginie*/
-    
-    
-    
-    
-    
-                                                /* code Nicolas */
+  
+ 
+  /* code Nicolas */
+
 /* SECTION 5 */
 .sec_5-b{
   position: absolute;
@@ -451,7 +541,10 @@ display: none;
 /*   Fin du code pour display:none */
 
 
-
+.testeur{
+display: flex;
+flex-direction: row;
+}
 
 
 
@@ -572,4 +665,3 @@ background-color: black;
   background-color: rgba(233, 229, 229, 0.849);
 }
 }
-
