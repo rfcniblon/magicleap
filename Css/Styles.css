@@ -287,6 +287,289 @@
   .dsk-11{width: 91.66%;}
   .dsk-12{width: 100%;}
   
-  /*Virginie*/
+                                                     /*Virginie*/
+    
+    
+    
+    
+    
+                                                /* code Nicolas */
+/* SECTION 5 */
+.sec_5-b{
+  position: absolute;
+  text-align: center;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button.sec_5-b{
+  color: rgb(75, 75, 75);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  height: 35px;
+  width: 90px;
+  border: 0;
+}
+.sec_5{
+  position: relative;
+  text-align: center;
+  
+  font-family: 'lomino-regular',sans-serif;
+  z-index: -1;
+  overflow: hidden;
+}
+.sec_5-h2{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  letter-spacing: 3px;
+  font-size: 45px;
+  font-family: 'lomino-regular',sans-serif;
+ 
+}
+ .sec_5-h3{
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  letter-spacing: 3.5px;
+  font-family: 'lomino-regular',sans-serif;
+} 
+/* suppression soulignement et couleur lien web  */
+a{
+  text-decoration: none;
+  color:#000;
+}
+#photo_dessus{
+  background-color: rgb(226, 250, 8);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+/* bouton rouge avec border radius */
+.foot_button{
+   color: white;
+   background-color: red;
+   border-radius: 30px;
+   height: 35px;
+   width: 100px;
+   border: 0;
+} 
+/* test modal */
+.content {
+max-width: 800px;
+margin: 0 auto;
+margin-bottom: 30px;
+padding: 30px;
+background: #fff;
+border: 1px solid #ddd;
+border-radius: 15px;
+}
+.modal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+display: none;
+}
+.modal-inner {
+margin-top: 30px;
+}
+/*  fin du test */
+.area_of_interest{
+ width: 25%;
+ background-color: white;
+ border-top: hidden;
+ border-left: hidden;
+ border-right: hidden;
+}
+.styleinput {
+width: 25%;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;  
+}
+#formulaire{
+      /* background-color: blueviolet;  */
+      /* width: 100%;
+      display: flex; */
+      flex-direction: column;
+      /* align-items: flex-start;
+      justify-content: flex-start; */
+      padding-left: 0;
+}
+/* bouton rouge avec border radius */
+
+#about_magic{
+   background-color: white;
+   width: 25%;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+
+} 
+#about{
+   background-color: white;
+   width: 25%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+} 
+#creators{
+   background-color: white;
+   width: 25%; 
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+} 
+
+/* ajout du code pour le display:none     */
+#about_magic_selected{
+  display: none;
+} 
+#about_selected{
+ display: none;
+}    
+#creators_selected{
+  display: none;
+} 
+#buy1_selected{
+display: none;
+}
+#custom_support_selected{
+display: none;
+}
+/*   Fin du code pour display:none */
+
+
+
+
+
+
+.footer2{
+  background-color: red;
 
 }
+.footer3{
+  background-color: rgba(21, 255, 0, 0.726);
+  
+}
+.footer4{
+background-color: black;
+}
+
+#footer_1{
+  background-color: white; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  
+}
+
+/*  Barre de separation */
+#hr_1{
+   background-color: crimson;
+   border: 0;
+   height: 8px;
+ }
+
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+ #footer_2{
+  background-color: white; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  /* align-items: center; */
+}
+/*nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/
+
+
+
+
+
+#buy1{
+  background-color: white; 
+  width: 25%; 
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+} 
+
+
+#custom_support{
+  background-color:white;
+    display: flex;
+    height: 25%;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+#reseau_sociaux{
+ background-color: white;
+ /* width: 100%;
+ flex-direction: column;*/
+ text-align: center;
+ /*margin-bottom: 15px;  */
+} 
+
+
+ /* opcatity logo reseau sociaux a finir !! */
+.img_hov:hover{
+  zoom: 1;
+ filter: alpha(opacity=40);
+ opacity: 0.4;
+} 
+.footer_haut1{
+  background-color:white; 
+  display: flex;
+  flex-direction: row ;
+  justify-content: left;
+  justify-items: center;
+  margin-right: 10px;
+  margin: 15px;
+}
+.footer_haut2{
+  background-color:white;
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  justify-items: center;
+  margin: 15px;
+}
+/* Footer credit */
+ .footer_haut0{
+  background-color: rgba(233, 229, 229, 0.849); 
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  justify-items: center;
+} 
+ /*Footer copyright */
+#footer_copyright{
+   display:flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   background-color:rgba(233, 229, 229, 0.849);  
+   height: 45px;  
+   
+}
+/* background formulaire gris claire*/
+.foot-background{
+  background-color: rgba(233, 229, 229, 0.849);
+}
+}
+
