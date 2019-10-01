@@ -1,4 +1,4 @@
-# Projet 1   #Virginie, #Baptiste et #Nicolas
+# Projet 1   Virginie, Baptiste et Nicolas
 Création d'une copie du site Magic Leap
 
 <img src="./img/magicleap1.png"> 
