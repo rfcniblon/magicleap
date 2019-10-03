@@ -28,6 +28,7 @@ twoBtn.addEventListener("click", function(event){
           nav.style.display="none";
       }else{
           nav.style.display="block";
+        
       }
     });
 };
