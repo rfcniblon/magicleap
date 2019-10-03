@@ -32,3 +32,9 @@ twoBtn.addEventListener("click", function(event){
       }
     });
 };
+
+//Bouton fermeture popup cookies  //
+const popupBtn = document.getElementById("cookies_button1");
+popupBtn.addEventListener("click", function(event){
+document.getElementById("popup_cookies").style.display = 'none';
+})

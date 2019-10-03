@@ -1,5 +1,9 @@
-Projet 1
-# magicleap
-Dupplication du site LEAP
+# Projet 1   Virginie, Baptiste et Nicolas
+Création d'une copie du site Magic Leap
 
-Virgine, Baptiste et Nicolas
+<img src="./img/magicleap1.png"> 
+<img src="./img/magicleap2.png"> 
+<img src="./img/magicleap3.png"> 
+<img src="./img/magicleap4.png"> 
+<img src="./img/magicleap5.png"> 
+<img src="./img/magicleap6.png"> 
