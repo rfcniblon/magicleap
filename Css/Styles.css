@@ -20,13 +20,14 @@
     top: 0;
     border: 1px solid lightgrey;
     height: auto;
+    z-index: 999;
  }
 
+ 
  /*.translucid{
-  opacity: 0.2;
+  background: transparent;
  }
-
- .translucid li{
+.translucid li{
   z-index: 100;
   padding: 10px;
   font-size: 0.95rem;
@@ -62,7 +63,7 @@
  
  
  li{
-   z-index: 100;
+   z-index: 999;
     padding: 10px;
     font-size: 0.95rem;
     color: rgba(0, 0, 0, 0.8)

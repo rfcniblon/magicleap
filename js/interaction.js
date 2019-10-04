@@ -49,4 +49,13 @@ window.addEventListener("scroll", function(scrollTop){
     translucid.style.display="none";
   }
 })
-}*/
+}
+window.scrollTop(window.addEventListener("scroll", => window.scrollTop{
+  if(window.scrollTop<10)
+
+}))
+$(window).scroll(function () {
+  var y = $(window).scrollTop();
+  if (y>0){
+  $('translucid').hide;}
+});*/
