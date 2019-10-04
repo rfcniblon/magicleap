@@ -38,3 +38,15 @@ const popupBtn = document.getElementById("cookies_button1");
 popupBtn.addEventListener("click", function(event){
 document.getElementById("popup_cookies").style.display = 'none';
 })
+
+/*window.scroll = fonction(){
+  let translucid = document.getElementById('translucid');
+
+window.addEventListener("scroll", function(scrollTop){
+   
+  if (window.scrollTop < 10){
+    window.alert("texte")
+    translucid.style.display="none";
+  }
+})
+}*/
